@@ -2,7 +2,7 @@
   "name": "dta-bars",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://xochi.github.io/progress-bars-react",
+  "homepage": "https://rodriguez.yoga/progress-bars-react",
   "dependencies": {
     "debounce": "^1.1.0",
     "gh-pages": "^1.1.0",
