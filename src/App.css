@@ -1,0 +1,149 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #222;
+  height: 100px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+body {
+  background-color: #ededed;
+  font-size: 16px;
+}
+
+.progress-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin: 2rem auto;
+}
+
+.progress-bar__component {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  width: 420px;
+  height: 26px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  transition: box-shadow 0.5s cubic-bezier(0.42, 0, 0.18, 0.99);
+  box-shadow: 0 0 0 0 transparent;
+}
+
+.--focus {
+  box-shadow: 0 0 0 3px #ededed, 0 0 0 6px rgb(85, 149, 245);
+}
+
+.progress-bar__graphic-element {
+  height: 26px;
+  width: 26px;
+  border-radius: 20px;
+  background-color: rgb(110, 160, 47);
+  margin-right: auto;
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.18, 0.99);
+}
+
+.progress-bar__percentage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.progress-bar__percentage p {
+  margin: auto 0;
+}
+
+.progress-bar__controls-container {
+  position: relative;
+  width: 420px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.progress-bar__controls-select {
+  position: relative;
+  display: flex;
+  width: 200px;
+  margin-right: auto;
+}
+
+.progress-bar__select {
+  position: relative;
+  -webkit-appearance: none;
+  flex: 1;
+  padding: 10px;
+  border-radius: 0;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 1rem;
+}
+
+.progress-bar__controls-select::before {
+  content: '>';
+  transform: rotate(90deg);
+  color: #959595;
+  margin: 0.75rem;
+  position: absolute;
+  font-size: 0.75rem;
+  z-index: 1;
+  right: 0;
+}
+
+.progress-bar__buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.progress-bar__buttons button {
+  padding: 10px 2rem;
+  margin: 0 1rem 0 0;
+  border-radius: 0;
+  border: 1px solid #e0e0e0;
+  font-size: 1.125rem;
+}
+
+/* iphone 5 screen width */
+@media screen and (max-width: 520px) {
+  .progress-bar__component {
+    width: 280px;
+  }
+
+  .progress-bar__controls-container {
+    width: 280px;
+  }
+
+  .progress-bar__controls-select {
+    width: 100%;
+  }
+
+  .progress-bar__buttons {
+    flex-direction: column;
+  }
+
+  .progress-bar__buttons button{
+    margin: 0 0 1rem;
+  }
+}
